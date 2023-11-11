@@ -1,0 +1,112 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html, body {
+  
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+body{
+  background-color: rgb(184, 255, 137);
+  
+}
+
+.heading{
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(18, 67, 201) ;
+  margin: 20px;
+  align-self: center;
+}
+.sub-heading{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(18, 67, 201) ;
+  margin: 20px;
+  align-self: center;
+  margin-top: -10px;
+
+}
+.heading-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+
+
+}
+.input-field{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.submit-button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.submit-button:hover{
+  background-color: rgb(18, 67, 201);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.input-and-button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.summary-header{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(18, 67, 201) ;
+  margin: 20px;
+  align-self: center;
+  margin-top: 50px;
+}
+.summary-content{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0) ;
+  margin: 20px;
+  align-self: center;
+  margin-top: -10px;
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
+}

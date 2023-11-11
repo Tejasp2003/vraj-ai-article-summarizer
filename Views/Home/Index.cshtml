@@ -1,0 +1,16 @@
+﻿@page
+@model ArticleController
+
+<h1>Article Summarizer</h1>
+<form asp-controller="Home" asp-action="Summarize" method="post">
+    <label for="articleUrl">Article URL:</label>
+    <input type="text" id="articleUrl" name="articleUrl" />
+    <button type="submit">Summarize</button>
+</form>
+<div>
+    @if (ViewBag.Summary != null)
+    {
+        <h2>Summary:</h2>
+        <p>@ViewBag.Summary</p>
+    }
+</div>

@@ -1,0 +1,23 @@
+@page
+@model ArticleController
+
+<div class="heading-div">
+    <h1 class="heading">Article Summarizer</h1>
+    <p class="sub-heading">Summarize any article in a few seconds</p>
+</div>
+<form asp-action="Summarize" method="post">
+    <div class="input-and-button-container">
+
+    <input type="text" id="articleUrl" name="articleUrl" placeholder="Enter the article URL" class="input-field" />
+    <button type="submit" class="submit-button">Summarize</button>
+    </div>
+    
+</form>
+<div>
+    @if (ViewBag.Summary != null)
+    {
+        <h2 class="summary-header">Summary:</h2>
+        <p class="summary-content">@Html.Raw(ViewBag.Summary)</p>
+    }
+</div>
+
